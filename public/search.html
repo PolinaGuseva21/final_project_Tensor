@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../src/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body class="app">
+    
+    <header class="header">     
+      <div class="header__player">        
+        <input class="header__player__album" type="image" src="./music/header/default-album.svg">
+        <div class="header__player__controls">
+          <ul class="controls">
+            <li><input class="controls__button" type="image" src="./music/header/rewind-symbol-left.svg"></li>
+            <li><input class="controls__button" type="image" src="./music/header/play-button.svg"></li>
+            <li><input class="controls__button" type="image" src="./music/header/rewind-symbol-right.svg"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__logo">
+        <a href="./index.html" class="logo">
+          <img src="./music/header/lastfm_logo.svg" alt="last-fm logo">
+        </a>
+      </div>
+      <div>
+        <ul class="header__menu">
+          <li><a href="./search.html">
+            <img src="./music/header/search.svg" alt="search"></img>
+            </a>
+          </li>
+          <li><a href="#" class="header__menu__text text">Live</a></li>
+          <li><a href="#" class="header__menu__text text">Music</a></li>
+          <li><a href="#" class="header__menu__text text">Charts</a></li>
+          <li><a href="#" class="header__menu__text text">Events</a></li>
+          <li><a href="#" class="header__menu__text text">Features</a></li>
+          <li class="text">•</li>
+          <li><a class="header__menu__text text" href="#">Log in</a></li>
+          <li><button class="header__button header__menu__text">SIGN UP</button></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+
+    </main>
+    <footer class="footer">
+        <nav class="footer__navigation">
+          <div class="footer__navigation__group">
+            <span class="footer__navigation__title">COMPANY</span>
+            <a href="#" class="footer__navigation__content text">About Last.fm</a>
+            <a href="#" class="footer__navigation__content text">Contact Us</a>
+            <a href="#" class="footer__navigation__content text">Jobs</a>
+          </div>
+          <div class="footer__navigation__group">
+            <span class="footer__navigation__title">HELP</span>
+            <a href="#" class="footer__navigation__content text">Track My Music</a>
+            <a href="#" class="footer__navigation__content text">Community Support</a>
+            <a href="#" class="footer__navigation__content text">Community Guidelines</a>
+            <a href="#" class="footer__navigation__content text">Help</a>
+          </div>
+          <div class="footer__navigation__group">
+            <span class="footer__navigation__title">GOODIES</span>
+            <a href="#" class="footer__navigation__content text">Download Scrobbler</a>
+            <a href="#" class="footer__navigation__content text">Developer API</a>
+            <a href="#" class="footer__navigation__content text">Free Music Downloads</a>
+            <a href="#" class="footer__navigation__content text">Merchandise</a>
+          </div>
+          <div class="footer__navigation__group">
+            <a href="#" class="footer__navigation__title">ACCOUNT</a>
+            <a href="#" class="footer__navigation__content text">Sign Up</a>
+            <a href="#" class="footer__navigation__content text">Log In</a>
+            <a href="#" class="footer__navigation__content text">Subscribe</a>
+          </div>
+        </nav>
+        <hr class="footer__border"/>
+        <div class="comments">
+          <article class="footer__comments header__menu__text">
+            <span class="text"><b>English</b> current   language   Deutsch   Español   Français   Italiano   日本語   Polski Português   Русский   Svenska   Türkçe   简体中文</span>
+            <span class="text">Time zone: <b>Europe/Moscow</b></span>
+            <span class="text">CBS Interactive © 2022 Last.fm Ltd. All rights reserved Terms of Use Privacy Policy Legal Policies Cookies Policy Cookie Information Jobs at ViacomCBS Last.fm Music</span>
+          </article>
+          <div class="footer__partner">
+            <span class="text"><b>Audioscrobbler</b></span>
+              <img src="./music/content/footer_logo.svg" alt="Footer logo">
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>
+  
