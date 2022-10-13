@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />    
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -12,7 +13,6 @@
     <title>React App</title>
   </head>
   <body class="app">
-    
     <header class="header">     
       <div class="header__player">        
         <input class="header__player__album" type="image" src="./music/header/default-album.svg">
@@ -31,23 +31,23 @@
       </div>
       <div>
         <ul class="header__menu">
-          <li><a href="./search.html">
+          <li><a href="./search.html" class="header__menu__padding">
             <img src="./music/header/search.svg" alt="search"></img>
             </a>
           </li>
-          <li><a href="#" class="header__menu__text text">Live</a></li>
-          <li><a href="#" class="header__menu__text text">Music</a></li>
-          <li><a href="#" class="header__menu__text text">Charts</a></li>
-          <li><a href="#" class="header__menu__text text">Events</a></li>
-          <li><a href="#" class="header__menu__text text">Features</a></li>
-          <li class="text">•</li>
-          <li><a class="header__menu__text text" href="#">Log in</a></li>
-          <li><button class="header__button header__menu__text">SIGN UP</button></li>
+          <li><a href="#" class="header__menu__text header__menu__padding text">Live</a></li>
+          <li><a href="#" class="header__menu__text header__menu__padding text">Music</a></li>
+          <li><a href="#" class="header__menu__text header__menu__padding text">Charts</a></li>
+          <li><a href="#" class="header__menu__text header__menu__padding text">Events</a></li>
+          <li><a href="#" class="header__menu__text header__menu__padding text">Features</a></li>
+          <li class="header__menu__text header__menu__padding text">•</li>
+          <li><a class="header__menu__text header__menu__padding text" href="#">Log in</a></li>
+          <li class="header__menu__text header__menu__padding"><button class="header__button">SIGN UP</button></li>
         </ul>
       </div>
     </header>
-    <main class="content">
-      <div class="first__section">
+    <div class="content__background"></div>
+    <div class="content__first__section">
       <span class="content__title content__title__margin text">Music</span>
       <div class="content__subtitle text content__subtitle__margin">
         <span class="content__subtitle__text"><b>Are trending right now</b></span>
@@ -140,7 +140,7 @@
         </a>
       </div>
     </div>
-    <div class="second__section">
+    <div class="content__second__section">
     <div class="content__subtitle text content__subtitle__margin">
       <span class="artists__profile__text__bold content__subtitle__text">Popular tracks</span>
       <hr class="content__subtitle__red__line"/>
@@ -308,7 +308,6 @@
       </a>
     </div>
   </div>
-    </main>
     <footer class="footer">
       <nav class="footer__navigation">
         <div class="footer__navigation__group">
@@ -332,7 +331,7 @@
           <a href="#" class="footer__navigation__content text">Merchandise</a>
         </div>
         <div class="footer__navigation__group">
-          <a href="#" class="footer__navigation__title">ACCOUNT</a>
+          <span class="footer__navigation__title">ACCOUNT</span>
           <a href="#" class="footer__navigation__content text">Sign Up</a>
           <a href="#" class="footer__navigation__content text">Log In</a>
           <a href="#" class="footer__navigation__content text">Subscribe</a>

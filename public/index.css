@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&display=swap');
+html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.app{
+    background-color: #292929;
+    display: grid;
+    grid-template-columns: 120px 1fr 120px;
+    grid-template-rows: 60px 1fr 1fr 360px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.content__background{
+    grid-area: 1/1/3/4;
+    background-image: url(./music/content/background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.content__first__section{
+    grid-area: 2/2/3/3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    font-family: Barlow;
+    color: #E3E3E3;
+    letter-spacing: 0.05em;
+}
+
+.header__menu__text{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Barlow;
+    text-decoration: none;
+}
+
+.header__menu__padding{
+    padding: 0px 26px 0px 0px;
+}
+
+.header__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: #212121;
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.content__submenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+    height: inherit;
+    align-items: flex-start;
+    padding: 0;
+    border-bottom: 1px solid #5A5A5A;
+    padding-bottom: 27px;
+}
+
+.content__submenu__text{
+    font-family: Barlow;
+    text-decoration: none;
+    padding: 0px 39px 0px 0px;
+}
+
+.content__red__submenu{
+    color: #D92323;
+}
+.content__submenu li:nth-child(1){
+    font-weight: bold;
+}
+
+.header__button{
+    border: none;
+    width: 95px;
+    height: 40px;
+    background-color: #E3E3E3;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.header__logo{
+    width: 112px;
+    height: 30px;
+    /* position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center; */
+    /* margin: 0px -350px 0px 0px; */
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    width: 128px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header__player{
+    display: flex;
+    flex-direction: row;
+    width: 248px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls__button{
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.header__player__album{
+    height: inherit;
+    width: 60px;
+}
+
+.content__title{
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.content__title__margin{
+    margin: 60px 0px 60px 0px;
+}
+
+.content__subtitle{
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.content__subtitle__margin{
+    margin: 0px 0px 60px 0px;
+}
+
+.content__subtitle__text{
+    font-size: 18px;
+}
+
+.content__subtitle__line{
+    width: 68px;
+    border: 3px solid #E3E3E3;
+    border-top: none;
+    border-radius: 10px;
+}
+.content__subtitle__red__line{
+    border: 3px solid #D92323;
+    width: 68px;
+    border-top: none;
+    border-radius: 10px;
+}
+
+.artists{
+    max-width: 1560px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.artists__profile{
+    margin: 0px 0px 50px 0px;
+    width: 230px;
+    height: 300px;
+    background: rgba(33, 33, 33, 0.4);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.artists__profile__image{
+    width: 190px;
+    height: 190px;
+    border-radius: 100%;
+}
+.artists__profile__text{
+    height: 57px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.artists__profile__text__bold{
+    font-weight: bold;
+}
+
+.artists__block__text{
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    justify-content: space-between;
+    background: rgba(33, 33, 33, 0.4);
+    border-radius: 0px 0px 10px 10px;
+    padding: 4px 10px 2px 11px;
+}
+
+.footer{
+    grid-area: 4/1/4/4;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer__border{
+    width: 100%;
+    border: 1px solid #5A5A5A;
+    margin: 27px 0px 27px 0px;
+}
+
+.footer__navigation{
+    display: flex;
+    flex-direction: row;
+    max-width: 1561px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__comments{
+    max-width: 1120px;
+    width: 100%;
+    height: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__navigation__group{
+    width: auto;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__navigation__content{
+    margin: 0px 0px 8px 0px;
+    text-decoration: none;
+}
+
+.footer__navigation__title{
+    color: #5A5A5A;
+    font-family: Barlow;
+    font-weight: 700;
+    margin: 0px 0px 8px 0px;
+}
+
+.footer__partner{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.comments{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1561px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.track{
+    display: flex;
+    width: 336px;
+    margin: 0px 72px 40px 0px;
+    text-decoration: none;
+}
+
+.track__txt{
+    width: inherit;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.track__txt__thin{
+    font-weight: 250;
+    letter-spacing: -0.03em;
+}
+
+.track__image{
+    height: 100px;
+    width: 100px;
+    padding: 0px 14px 0px 0px;
+}
+
+.track__list{
+    width: 100%;
+    max-width: 1650px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content__second__section{
+    grid-area: 3/2/4/3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0px 0px 0px;
+}
+
+.content{
+    grid-area: 2/2;
+    width: 100%;
+}
+
+.content__menu{
+    margin: 60px 0px 0px 0px;
+}
+
+.artist__album__section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.feild__input{
+    position: relative;
+    margin: 0px 0px 40px 0px;
+}
+
+.feild__input__search::placeholder {
+    color: #E3E3E3;
+    opacity: 0.4;
+}
+
+.feild__input__search{
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #E3E3E3;
+    background-color: #3D3D3D;
+    background-clip: padding-box;
+    border: 1px solid #3D3D3D;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.feild__input__search[type="search"]::-webkit-search-cancel-button{
+    appearance: none;
+}
+
+.feild__input__icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0.875rem;
+    width: 1rem;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out;
+  }
+
+
+.artist__section{
+    width: 48%;
+}
+.tracks{
+    width: 100%;
+    height: 100%;
+}
+
+.tracks div:nth-child(11){
+    padding: 0px 0px 60px 0px;
+    border: 0;
+}
+.block__title{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0px 0px 60px 0px;
+    align-items: center;
+}
+.tracks__line{
+    border-bottom: 1px solid #5A5A5A;
+    padding-bottom: 10px;    
+}
+.tracks__line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 0px 50px;
+}
+
+.tracks__line__icon{
+    height: 60px;
+    width: 60px;
+}
+
+.tracks__line__buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about__track{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.tracks__line__buttons a:nth-child(n){
+    padding: 0px 30px 0px 0px;
+}
+
+.block__title__text{
+    font-size: 32px;
+}
+
+.block__title__more{
+    color: #D92323;
+    text-decoration: none;
+    padding: 0px 12px 0px 0px;
+    font-family: Barlow;
+}
+
+.artist__block{
+    width: 230px;
+    height: 230px;
+    background-image: url(./music/content/drake.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    margin: 0px 0px 34px 0px;
+}
+.artists__block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
