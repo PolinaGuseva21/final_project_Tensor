@@ -20,7 +20,7 @@ html{
     align-items: center;
 }
 .content__first__section{
-    background-image: url(./music/content/background.jpg);
+    background-image: url(./music/background.jpg);
     background-size: cover;
 }
 
@@ -28,6 +28,18 @@ html{
     font-family: Barlow;
     color: #E3E3E3;
     letter-spacing: 0.05em;
+}
+
+
+.no__result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Barlow;
+    color: #e3e3e327;
+    letter-spacing: 0.05em;   
+    height: 50vh;
+    margin-top: -150px;
 }
 
 .header__menu__text{
@@ -85,6 +97,9 @@ html{
 }
 
 .header__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     width: 95px;
     height: 40px;
@@ -92,6 +107,7 @@ html{
     border-radius: 3px;
     font-weight: bold;
     cursor: pointer;
+    color: #212121;
 }
 .header__logo{
     width: 112px;
@@ -210,7 +226,8 @@ html{
 .artists__block__text{
     display: flex;
     flex-direction: column;
-    height: 20%;
+    height: auto;
+    width: inherit;
     justify-content: space-between;
     background: rgba(33, 33, 33, 0.4);
     border-radius: 0px 0px 10px 10px;
@@ -258,6 +275,10 @@ html{
 .footer__navigation__content{
     margin: 0px 0px 8px 0px;
     text-decoration: none;
+}
+
+.footer__navigation__content:hover{
+    text-decoration: underline;
 }
 
 .footer__navigation__title{
@@ -342,6 +363,9 @@ html{
 .feild__input__search::placeholder {
     color: #E3E3E3;
     opacity: 0.4;
+    font-family: Barlow;
+    color: #E3E3E3;
+    letter-spacing: 0.05em;
 }
 
 .feild__input__search{
@@ -349,7 +373,8 @@ html{
     width: 100%;
     height: 30px;
     padding: 0.375rem 0.75rem;
-    font-family: inherit;
+    font-family: Barlow;
+    letter-spacing: 0.05em;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -398,7 +423,7 @@ html{
 }
 .tracks__line{
     border-bottom: 1px solid #5A5A5A;
-    padding-bottom: 10px;    
+    padding: 10px 0px 10px 0px;    
 }
 .tracks__line{
     display: flex;
@@ -443,11 +468,12 @@ html{
 .artist__block{
     width: 230px;
     height: 230px;
-    background-image: url(./music/content/drake.jpg);
+    background-image: url(./music/no_image.png);
     background-size: cover;
     border-radius: 10px;
     display: flex;
     align-items: flex-end;
+    text-decoration: none;
 }
 .artists__block{
     display: flex;
@@ -461,4 +487,20 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.hidden{
+    display: none;
+}
+
+.track__link{    
+    text-decoration: none;
+}
+
+.track__link:hover{
+    text-decoration: underline;
+}
+
+.like__padding{
+    margin-right: 30px;
 }
