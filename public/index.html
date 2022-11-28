@@ -2,36 +2,352 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />    
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Last.fm</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+  <body class="app">
+    <header class="header">     
+      <div class="header__player">        
+        <input class="header__player__album" type="image" src="./music/header/default-album.svg">
+        <div class="header__player__controls">
+          <ul class="controls">
+            <li><input class="controls__button" type="image" src="./music/header/rewind-symbol-left.svg"></li>
+            <li><input class="controls__button" type="image" src="./music/header/play-button.svg"></li>
+            <li><input class="controls__button" type="image" src="./music/header/rewind-symbol-right.svg"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__logo">
+        <a href="./index.html" class="logo">
+          <img src="./music/header/lastfm_logo.svg" alt="last-fm logo">
+        </a>
+      </div>
+      <nav>
+        <ul class="header__menu">
+          <li><a href="./search.html" class="header__menu__padding">
+            <img src="./music/header/search.svg" alt="search"></img>
+            </a>
+          </li>
+          <li><a href="#" class="header__menu__text header__menu__padding text">Live</a></li>
+          <li><a href="#" class="header__menu__text header__menu__padding text">Music</a></li>
+          <li><a href="#" class="header__menu__text header__menu__padding text">Charts</a></li>
+          <li><a href="#" class="header__menu__text header__menu__padding text">Events</a></li>
+          <li><a href="#" class="header__menu__text header__menu__padding text">Features</a></li>
+          <li class="header__menu__text header__menu__padding text">•</li>
+          <li><a class="header__menu__text header__menu__padding text" href="#">Log in</a></li>
+          <li class="header__menu__text header__menu__padding"><button class="header__button">SIGN UP</button></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content__first__section">
+      <span class="content__title content__title__margin text">Music</span>
+      <div class="content__subtitle text content__subtitle__margin">
+        <span class="content__subtitle__text"><b>Are trending right now</b></span>
+        <hr class="content__subtitle__line"/>
+      </div>
+      <div class="artists">
+        <a href="#" class="artists__profile">
+          <img class="artists__profile__image" src="./music/content/drake.jpg"></img>
+          <div class="artists__profile__text">
+            <span class="artists__profile__text__bold content__subtitle__text text">Drake</span>
+            <span class="content__subtitle__text text">hip-hop  •  rap  •  rnb</span>
+          </div>
+        </a>
+        <a href="#" class="artists__profile">
+          <img class="artists__profile__image" src="./music/content/track__butter.jpg"></img>
+          <div class="artists__profile__text">
+            <span class="artists__profile__text__bold content__subtitle__text text">Drake</span>
+            <span class="content__subtitle__text text">hip-hop  •  rap  •  rnb</span>
+          </div>
+        </a>
+        <a href="#" class="artists__profile">
+          <img class="artists__profile__image" src="./music/content/track__romantic.jpg"></img>
+          <div class="artists__profile__text">
+            <span class="artists__profile__text__bold content__subtitle__text text">Drake</span>
+            <span class="content__subtitle__text text">hip-hop  •  rap  •  rnb</span>
+          </div>
+        </a>
+        <a href="#" class="artists__profile">
+          <img class="artists__profile__image" src="./music/content/track__rush.jpg"></img>
+          <div class="artists__profile__text">
+            <span class="artists__profile__text__bold content__subtitle__text text">Drake</span>
+            <span class="content__subtitle__text text">hip-hop  •  rap  •  rnb</span>
+          </div>
+        </a>
+        <a href="#" class="artists__profile">
+          <img class="artists__profile__image" src="./music/content/track__sexy.jpg"></img>
+          <div class="artists__profile__text">
+            <span class="artists__profile__text__bold content__subtitle__text text">Drake</span>
+            <span class="content__subtitle__text text">hip-hop  •  rap  •  rnb</span>
+          </div>
+        </a>
+        <a href="#" class="artists__profile">
+          <img class="artists__profile__image" src="./music/content/track__butter.jpg"></img>
+          <div class="artists__profile__text">
+            <span class="artists__profile__text__bold content__subtitle__text text">Drake</span>
+            <span class="content__subtitle__text text">hip-hop  •  rap  •  rnb</span>
+          </div>
+        </a>
+        <a href="#" class="artists__profile">
+          <img class="artists__profile__image" src="./music/content/track__sexy.jpg"></img>
+          <div class="artists__profile__text">
+            <span class="artists__profile__text__bold content__subtitle__text text">Drake</span>
+            <span class="content__subtitle__text text">hip-hop  •  rap  •  rnb</span>
+          </div>
+        </a>
+        <a href="#" class="artists__profile">
+          <img class="artists__profile__image" src="./music/content/track__rush.jpg"></img>
+          <div class="artists__profile__text">
+            <span class="artists__profile__text__bold content__subtitle__text text">Drake</span>
+            <span class="content__subtitle__text text">hip-hop  •  rap  •  rnb</span>
+          </div>
+        </a>
+        <a href="#" class="artists__profile">
+          <img class="artists__profile__image" src="./music/content/drake.jpg"></img>
+          <div class="artists__profile__text">
+            <span class="artists__profile__text__bold content__subtitle__text text">Drake</span>
+            <span class="content__subtitle__text text">hip-hop  •  rap  •  rnb</span>
+          </div>
+        </a>
+        <a href="#" class="artists__profile">
+          <img class="artists__profile__image" src="./music/content/track__romantic.jpg"></img>
+          <div class="artists__profile__text">
+            <span class="artists__profile__text__bold content__subtitle__text text">Drake</span>
+            <span class="content__subtitle__text text">hip-hop  •  rap  •  rnb</span>
+          </div>
+        </a>
+        <a href="#" class="artists__profile">
+          <img class="artists__profile__image" src="./music/content/track__butter.jpg"></img>
+          <div class="artists__profile__text">
+            <span class="artists__profile__text__bold content__subtitle__text text">Drake</span>
+            <span class="content__subtitle__text text">hip-hop  •  rap  •  rnb</span>
+          </div>
+        </a>
+        <a href="#" class="artists__profile">
+          <img class="artists__profile__image" src="./music/content/track__rush.jpg"></img>
+          <div class="artists__profile__text">
+            <span class="artists__profile__text__bold content__subtitle__text text">Drake</span>
+            <span class="content__subtitle__text text">hip-hop  •  rap  •  rnb</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="content__second__section">
+    <div class="content__subtitle text content__subtitle__margin">
+      <span class="artists__profile__text__bold content__subtitle__text">Popular tracks</span>
+      <hr class="content__subtitle__red__line"/>
+    </div>
+    <div class="track__list">
+      <a href="#" class="track">
+        <img class="track__image"src="./music/content/track__butter.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Butter</span>
+          <span>BTS</span>
+          <span class="track__txt__thin">hip-hop  •  rap  •  rnb</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__rush.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Rush Hour(Feat. j-hope of BTS)</span>
+          <span>Crush</span>
+          <span class="track__txt__thin">k-pop  •  funk  •  bts</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__blackpink.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Shut Down</span>
+          <span>BLACKPINK</span>
+          <span class="track__txt__thin">k-pop  •  pop</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__sexy.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">SEXY NUKIM (feat. RM of BTS)</span>
+          <span>Balming Tiger</span>
+          <span class="track__txt__thin">korean hip-hop  •  rm</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__romantic.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Romantic Homicide</span>
+          <span>d4vd</span>
+          <span class="track__txt__thin">depresivo</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image"src="./music/content/track__butter.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Butter</span>
+          <span>BTS</span>
+          <span class="track__txt__thin">hip-hop  •  rap  •  rnb</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__rush.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Rush Hour(Feat. j-hope of BTS)</span>
+          <span>Crush</span>
+          <span class="track__txt__thin">k-pop  •  funk  •  bts</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__blackpink.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Shut Down</span>
+          <span>BLACKPINK</span>
+          <span class="track__txt__thin">k-pop  •  pop</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__sexy.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">SEXY NUKIM (feat. RM of BTS)</span>
+          <span>Balming Tiger</span>
+          <span class="track__txt__thin">korean hip-hop  •  rm</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__romantic.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Romantic Homicide</span>
+          <span>d4vd</span>
+          <span class="track__txt__thin">depresivo</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image"src="./music/content/track__butter.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Butter</span>
+          <span>BTS</span>
+          <span class="track__txt__thin">hip-hop  •  rap  •  rnb</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__rush.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Rush Hour(Feat. j-hope of BTS)</span>
+          <span>Crush</span>
+          <span class="track__txt__thin">k-pop  •  funk  •  bts</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__blackpink.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Shut Down</span>
+          <span>BLACKPINK</span>
+          <span class="track__txt__thin">k-pop  •  pop</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__sexy.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">SEXY NUKIM (feat. RM of BTS)</span>
+          <span>Balming Tiger</span>
+          <span class="track__txt__thin">korean hip-hop  •  rm</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__romantic.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Romantic Homicide</span>
+          <span>d4vd</span>
+          <span class="track__txt__thin">depresivo</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image"src="./music/content/track__butter.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Butter</span>
+          <span>BTS</span>
+          <span class="track__txt__thin">hip-hop  •  rap  •  rnb</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__rush.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Rush Hour(Feat. j-hope of BTS)</span>
+          <span>Crush</span>
+          <span class="track__txt__thin">k-pop  •  funk  •  bts</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__blackpink.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Shut Down</span>
+          <span>BLACKPINK</span>
+          <span class="track__txt__thin">k-pop  •  pop</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__sexy.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">SEXY NUKIM (feat. RM of BTS)</span>
+          <span>Balming Tiger</span>
+          <span class="track__txt__thin">korean hip-hop  •  rm</span>
+        </div>
+      </a>
+      <a href="#" class="track">
+        <img class="track__image" src="./music/content/track__romantic.jpg" alt="Track">
+        <div class="track__txt content__subtitle__text text">
+          <span class="artists__profile__text__bold">Romantic Homicide</span>
+          <span>d4vd</span>
+          <span class="track__txt__thin">depresivo</span>
+        </div>
+      </a>
+    </div>
+  </div>
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <div class="footer__navigation__group">
+          <span class="footer__navigation__title">COMPANY</span>
+          <a href="#" class="footer__navigation__content text">About Last.fm</a>
+          <a href="#" class="footer__navigation__content text">Contact Us</a>
+          <a href="#" class="footer__navigation__content text">Jobs</a>
+        </div>
+        <div class="footer__navigation__group">
+          <span class="footer__navigation__title">HELP</span>
+          <a href="#" class="footer__navigation__content text">Track My Music</a>
+          <a href="#" class="footer__navigation__content text">Community Support</a>
+          <a href="#" class="footer__navigation__content text">Community Guidelines</a>
+          <a href="#" class="footer__navigation__content text">Help</a>
+        </div>
+        <div class="footer__navigation__group">
+          <span class="footer__navigation__title">GOODIES</span>
+          <a href="#" class="footer__navigation__content text">Download Scrobbler</a>
+          <a href="#" class="footer__navigation__content text">Developer API</a>
+          <a href="#" class="footer__navigation__content text">Free Music Downloads</a>
+          <a href="#" class="footer__navigation__content text">Merchandise</a>
+        </div>
+        <div class="footer__navigation__group">
+          <span class="footer__navigation__title">ACCOUNT</span>
+          <a href="#" class="footer__navigation__content text">Sign Up</a>
+          <a href="#" class="footer__navigation__content text">Log In</a>
+          <a href="#" class="footer__navigation__content text">Subscribe</a>
+        </div>
+      </nav>
+      <hr class="footer__border"/>
+      <div class="comments">
+        <article class="footer__comments header__menu__text">
+          <span class="text"><b>English</b> current   language   Deutsch   Español   Français   Italiano   日本語   Polski Português   Русский   Svenska   Türkçe   简体中文</span>
+          <span class="text">Time zone: <b>Europe/Moscow</b></span>
+          <span class="text">CBS Interactive © 2022 Last.fm Ltd. All rights reserved Terms of Use Privacy Policy Legal Policies Cookies Policy Cookie Information Jobs at ViacomCBS Last.fm Music</span>
+        </article>
+        <div class="footer__partner">
+          <span class="text"><b>Audioscrobbler</b></span>
+            <img src="./music/content/footer_logo.svg" alt="Footer logo">
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
