@@ -20,7 +20,7 @@ html{
     align-items: center;
 }
 .content__first__section{
-    background-image: url(./music/background.jpg);
+    background-image: url(../public/music/background.jpg);
     background-size: cover;
 }
 
@@ -38,7 +38,6 @@ html{
     color: #e3e3e327;
     letter-spacing: 0.05em;   
     height: 50vh;
-    margin-top: -150px;
 }
 
 .header__menu__text{
@@ -110,14 +109,14 @@ html{
 }
 .header__logo{
     width: 112px;
-    height: 30px;
-    /* position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center; */
-    /* margin: 0px -350px 0px 0px; */
+    height: 30px;    
+    background-image: url(../public/music/header/lastfm_logo.svg);
+}
+
+.header__menu__search{
+    background-image: url(../public/music/header/search.svg);
+    height: 20px;
+    width: 20px;
 }
 
 .controls{
@@ -126,6 +125,7 @@ html{
     width: 128px;
     align-items: center;
     list-style-type: none;
+    margin: 0;
 }
 
 .header__player{
@@ -140,11 +140,35 @@ html{
     height: 35px;
     width: 35px;
     cursor: pointer;
+    background-color: inherit;
+    border: none;
+    padding: 0;
+}
+
+.prev__button{
+    background-image: url(../public/music/header/rewind-symbol-left.svg);
+}
+
+.play__button{
+    background-image: url(../public/music/header/play-button.svg);
+}
+
+.next__button{
+    background-image: url(../public/music/header/rewind-symbol-right.svg);
+}
+
+.play__track__button{
+    background-image: url(../public/search/play-button-page-2.svg);
 }
 
 .header__player__album{
-    height: inherit;
+    height: 60px;
     width: 60px;
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-image: url(../public/music/header/default-album.svg);
 }
 
 .content__title{
@@ -210,9 +234,10 @@ html{
     width: 190px;
     height: 190px;
     border-radius: 100%;
+    margin-bottom: 10px;
 }
 .artists__profile__text{
-    height: 57px;
+    height: 70px;
     width: 190px;
     display: flex;
     flex-direction: column;
@@ -317,6 +342,7 @@ html{
 .track__txt__thin{
     font-weight: 250;
     letter-spacing: -0.03em;
+    text-decoration: none;
 }
 
 .track__image{
@@ -399,14 +425,21 @@ html{
     top: 0;
     bottom: 0;
     right: 0.875rem;
-    width: 1rem;
-    cursor: pointer;
-    transition: color 0.15s ease-in-out;
+    cursor: pointer; 
+    border: none; 
+    background: none;  
+}
+
+.feild__input__icon__image{
+    width: 1.3rem;
+    height: 1.2rem;
+    background-image: url(../public//music/header/search.svg);
 }
 
 .tracks{
     width: 100%; 
-    max-width: 1750px;
+    max-width: 1750px;    
+    min-width: 930px;
 }
 
 .tracks div:nth-child(11){
@@ -435,6 +468,8 @@ html{
 .tracks__line__icon{
     height: 60px;
     width: 60px;
+    background-image: url(../public/music/no_image.png);
+    background-size: 60px 60px;
 }
 
 .tracks__line__buttons{
@@ -449,8 +484,12 @@ html{
     width: 35%;
 }
 
+.tracks__line__buttons button:nth-child(n){
+    margin-right: 30px;
+}
+
 .tracks__line__buttons a:nth-child(n){
-    padding: 0px 30px 0px 0px;
+    margin-right: 30px;
 }
 
 .block__title__text{
@@ -462,12 +501,21 @@ html{
     text-decoration: none;
     padding: 0px 12px 0px 0px;
     font-family: Barlow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.block__title__more__image{
+    width: 10px;
+    height: 12px;
+    background-image: url(../public/search/more.svg);
 }
 
 .artist__block{
     width: 230px;
     height: 230px;
-    background-image: url(./music/no_image.png);
+    background-image: url(../public/music/no_image.png);
     background-size: cover;
     border-radius: 10px;
     display: flex;
@@ -500,6 +548,35 @@ html{
     text-decoration: underline;
 }
 
-.like__padding{
-    margin-right: 30px;
+.like{
+    background-image: url(../public/search/heart-fill.svg);
+}
+
+.dislike{
+    background-image: url(../public/search/heart-empty.svg);
+}
+.genre{
+    text-decoration: none;
+}
+
+.genre:hover{
+    text-decoration: underline;
+}
+.tagList li{
+    margin-right: 35px;
+    text-indent: -5px;
+}
+
+.tagList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin: 0;
+}
+.footer__logo{
+    background-image: url(../public/music/header/footer_logo.svg);
+    height: 21px;
+    width: 36px;
 }
